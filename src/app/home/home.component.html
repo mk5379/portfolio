@@ -1,0 +1,67 @@
+<nav class="navbar navbar-expand-lg" style="background-color:#333333;">
+  <div class="container-fluid">
+    <div class="col-3">
+      <a class="navbar-brand name" href="./home.component.html">MK's Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    </div>
+    <div class="collapse navbar-collapse" style="justify-content:space-between;" id="navbarNavDropdown">
+      <div >
+          <ul class="navbar-nav">
+              <div style="margin-right : 200px;">
+                  <li class="nav-item">
+                      <a class="nav-link name" aria-current="page" href="../home">Home</a>
+                  </li>
+              </div>
+              <div style="margin-right : 200px;">
+                  <li class="nav-item">
+                      <a class="nav-link name" href="../my-projects">Projects</a>
+                    </li>
+              </div>
+              <div style="margin-right : 200px;">
+                  <li class="nav-item">
+                      <a class="nav-link name" href="../our-services">Services</a>
+                    </li>
+              </div>
+              <div>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle name" href="../Content" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       Content-Me
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+              </div>
+            </ul>
+      </div>
+      <div style="margin-right : 200px;">
+          <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+              <div id="toggle">
+                <button class="btn1" [class.active]="isActive" (click) ="onChange()"></button> 
+              </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container d-flex" style="justify-content:space-evenly;">
+  <div class="col-6">
+      <h1>Hello I'm <i style="color: #00ffff;">Min Khant!</i></h1>
+      <h4 class="contents">
+          Hi everyone!Let's me introduce for myself.Hi guys,I'm a <i style="color: #007bff;">Programmer</i> & I've done well in <i style="color: skyblue;">Frontend Development.</i>
+          I've learn for forntend Development & programming languages <i style="color: #00ffff;">(eg. JS,Java,Python...etc)</i> since 2020.So I've a lot of experience in <i style="color: skyblue;">programs and web-development</i>.
+          Most People say that <i style="color: #007bff;">programming languages and forntend-backend</i> are so difficult but if you have a preception that you must be a programmer in your mind you never giveup and just do it start to end.
+      </h4>
+      <button class="btn btn-outline-primary" style="font-size: x-large;">let's do this!</button>
+  </div>
+  <div class="col-6">
+      <img src="../../assets/images/web-dev.png" class="web" alt="">
+  </div>
+</div>
